@@ -1,0 +1,70 @@
+.preview {
+    height: 476px;
+    background-image: url('@{imagePath}kithen_mobile.png');
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode:multiply;
+    background-repeat: no-repeat;
+}
+.preview__wrap {
+    display: flex;
+    flex-direction: column;
+    padding-top: 85px;
+}
+.preview__maintext{
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 133%;
+    text-transform: uppercase;
+    color: @textmain;    
+    margin-bottom: 16px;
+}
+.preview__select{
+    color: @textbright;
+}
+.preview__text{
+    font-weight: 400;
+    font-size: 12px;
+    color: @textmain;
+    line-height: 154%;
+    word-break: break-word;
+    margin-bottom: 50px;
+}
+.preview__linkorange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 51px;
+    width: 100%;
+    color: @textmain;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+    background-color: @textbright;
+    border-radius: 2%;
+    margin-bottom: 26px;
+}
+.preview__linkorange:hover{
+    background-color: inherit;
+    border: 1px solid @textmain;
+    cursor: pointer;
+}
+.preview__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    width: 100%;
+    border: 1px solid @textmain;
+    border-radius: 2%;
+    background-color:inherit;
+    color: @textmain;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 11px;
+}
+.preview__link:hover{
+    background-color: @textbright;
+    border: none;
+    cursor: pointer;
+}
