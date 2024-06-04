@@ -28,6 +28,7 @@
     padding-right: 10px;
 }
 .completedproject__caruselblock {
+    position: relative;
     margin-top: 36px;
 }
 .completedproject__slide {
@@ -35,8 +36,13 @@
     flex-direction: column;
     flex-wrap: wrap;
 }
+
 .completedproject__slideimg {
     margin-bottom: 30px;
+}
+.completedproject__img {
+    width: 340px;
+    height: 241px;    
 }
 .completedproject__slideinfo {
     display: grid;
@@ -58,4 +64,44 @@
     color: @textmain;    
     word-break: break-word;
     width: 105px;
+}
+.completed__buttons {
+    position: absolute;
+    top:24%;
+    left:13px;
+    width: 312px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.completed__buttonsleft {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    background-color: @textbright;
+    background-image: url('@{imagePath}left_button.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: 2;
+}
+.completed__buttonsright {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    background-color: @textbright;
+    background-image: url('@{imagePath}right_button.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: 2;
+}
+.completed__buttonsleft:hover{
+    cursor: pointer;
+    background-color:#E4981E;
+}
+.completed__buttonsright:hover{
+    cursor: pointer;
+    background-color:#E4981E;
 }
