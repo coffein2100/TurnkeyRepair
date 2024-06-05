@@ -48,17 +48,16 @@
 .typesofrepair__type {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-
 }
 .typesofrepair__typeli {
     position: relative;
+    margin-bottom: 173px;
 }
 .typesofrepairli__about {
     position: absolute;
     width: 275px;
     min-height: 230px;
-    bottom:-85px;
+    bottom:-95px;
     left: -5px;
     background-color: @textmain;
     display: flex;
@@ -68,10 +67,43 @@
 .typesofrepairli__abouttext{
     padding-left: 36px;
     padding-top: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
     font-family: 'Yeseva One', sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 139%;
     color: #363636;    
+}
+.typesofrepairli__redecoratinglist {
+    list-style-type: disc;
+    padding-left: 50px;
+}
+.typesofrepairli__redecoratingtext {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 170%;
+    color: #959595;    
+}
+.typesofrepairli__aboutlink {
+    display: flex;
+    width: 190px;
+    height: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:20px;
+    left: 5px;
+    font-family: 'Yeseva One', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 139%;
+    text-transform: uppercase;
+    color: @textmain;  
+    box-shadow: 5px 5px 10px 0 rgba(227, 184, 115, 0.3);
+    background-color: @textbright;  
+}
+.typesofrepairli__aboutlink:hover {
+    cursor: pointer;
+    background-color:#E4981E;  
 }
