@@ -1,0 +1,77 @@
+.typesofrepair {
+    background-color: @textmain;
+    padding-top: 80px;
+}
+.typesofrepair__wraptop {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+}
+.typesofrepair__headtext {
+    font-family: 'Yeseva One', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 139%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #181818;    
+    margin-bottom: 15px;
+}
+.typesofrepair__img {
+    position: relative;
+    width: 38px;
+    height: 28px;
+    margin-bottom: 40px;
+}
+.typesofrepair__img::before {
+    position: absolute;
+    content: '';
+    border-radius: 30px;
+    width: 32px;
+    height: 1px;
+    top:13px;
+    left: -40px;
+    background: @textbright;
+}
+.typesofrepair__img::after {
+    position: absolute;
+    content: '';
+    border-radius: 30px;
+    width: 32px;
+    height: 1px;
+    top:13px;
+    right: -40px;
+    background: @textbright;
+}
+.typesofrepair__type {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.typesofrepair__typeli {
+    position: relative;
+}
+.typesofrepairli__about {
+    position: absolute;
+    width: 275px;
+    min-height: 230px;
+    bottom:-85px;
+    left: -5px;
+    background-color: @textmain;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.05);
+}
+.typesofrepairli__abouttext{
+    padding-left: 36px;
+    padding-top: 16px;
+    margin-bottom: 10px;
+    font-family: 'Yeseva One', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 139%;
+    color: #363636;    
+}
