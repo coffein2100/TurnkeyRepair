@@ -13,7 +13,7 @@
     <!-- Подключение less файла-->
     <link rel="stylesheet/less" type="text/less" href="less/styles.less">
     <script src="js/less.js"></script>
-    <script src="js/index.js" defer></script>
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -50,7 +50,7 @@
                     <ul class="completedproject__slides" id="completedproject__slides">
                         <li class="completedproject__slide">
                             <div class="completedproject__slideimg">
-                                <img class="completedproject__img" src="img/completed_rostov.png" width="340" height="241" alt="пример работы1"/>
+                                <img class="completedproject__img" src="img/completed_rostov.png" width="340" height="241" alt="пример работы1">
                             </div>
                             <div class="completedproject__slideinfowrap">
                                 <ul class="completedproject__slideinfo">
@@ -75,7 +75,7 @@
                         </li>
                         <li class="completedproject__slide">
                             <div class="completedproject__slideimg">
-                                <img class="completedproject__img" src="img/comp_sochi.png" width="340" height="241" alt="пример работы2"/>
+                                <img class="completedproject__img" src="img/comp_sochi.png" width="340" height="241" alt="пример работы2">
                             </div>
                             <div class="completedproject__slideinfowrap">
                                 <ul class="completedproject__slideinfo">
@@ -108,16 +108,16 @@
             <div class="onlinecontrolmobile">
                 <h2 class="onlinecontrol__headtext">online control</h2>
                 <div class="onlinecontrol__img">
-                    <img  src="img/camera.svg" width="34" height="29" alt="камера"/>
+                    <img  src="img/camera.svg" width="34" height="29" alt="камера">
                 </div>
                 <video class="onlinecontrol__video" controls width="340" height="207">
                 </video>
                 <p class="onlinecontrol__about">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. Y ou can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.</p>
-                <form class="onlinecontrol__form">
+                <form class="onlinecontrol__form" method="post">
                     <label for="name" class="onlinecontrol__formlabel">Name: </label>
-                    <input class="onlinecontrol__formlinput" type="text" name="name" id="name" required placeholder="What is your name:"/>
+                    <input class="onlinecontrol__formlinput" type="text" name="name" id="name" required placeholder="What is your name:">
                     <label for="tel" class="onlinecontrol__formlabel">Number </label>
-                    <input class="onlinecontrol__formlinputtel" type="tel" name="tel" id="tel" required placeholder="Your phone number:"/>
+                    <input class="onlinecontrol__formlinputtel" type="tel" name="tel" id="tel" required placeholder="Your phone number:">
                     <input type="checkbox" class="custom-checkbox" id="pd" name="pd" value="yes">
                     <label for="pd" class="onlinecontrol__formlabelpd">I agree to the processing of personal data</label>
                     <button type="submit" class="onlinecontrol__formbutton">SUMBIT</button>
@@ -131,12 +131,12 @@
                 <div class="typesofrepair__wraptop">
                     <h2 class="typesofrepair__headtext">TYPES OF REPAIR</h2>
                     <div class="typesofrepair__img">
-                        <img src="img/tools.svg" width="28" height="28" alt="камера"/>
+                        <img src="img/tools.svg" width="28" height="28" alt="камера">
                     </div>
                     <ul class="typesofrepair__type">
                         <li class="typesofrepair__typeli">
                             <div class="typesofrepairli__img">
-                                <img src="img/Redecorating_mobile.png" width="340" height="365" alt="Redecorating type"/>
+                                <img src="img/Redecorating_mobile.png" width="340" height="365" alt="Redecorating type">
                             </div>
                             <div class="typesofrepairli__about">
                                 <p class="typesofrepairli__abouttext">Redecorating</p>
@@ -154,7 +154,7 @@
                         </li>
                         <li class="typesofrepair__typeli">
                             <div class="typesofrepairli__img">
-                                <img src="img/Overhaul_mobile.png" width="340" height="365" alt="Redecorating type Overhaul"/>
+                                <img src="img/Overhaul_mobile.png" width="340" height="365" alt="Redecorating type Overhaul">
                             </div>
                             <div class="typesofrepairli__about">
                                 <p class="typesofrepairli__abouttext">Overhaul</p>
@@ -172,7 +172,7 @@
                         </li>
                         <li class="typesofrepair__typeli">
                             <div class="typesofrepairli__img">
-                                <img src="img/Designerrepair_mobile.png" width="340" height="365" alt="Redecorating type Designerrepair"/>
+                                <img src="img/Designerrepair_mobile.png" width="340" height="365" alt="Redecorating type Designerrepair">
                             </div>
                             <div class="typesofrepairli__about">
                                 <p class="typesofrepairli__abouttext">Designer Repair</p>
@@ -189,6 +189,43 @@
                             </div>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="question">
+        <div class="container">
+            <div class="questionmobile">
+                <div class="realize">
+                    <h2 class="realize__headtext">We realize your wildest fantasies</h2>
+                    <div class="realize__buttons">
+                        <button class="realize__buttonsleft"></button>
+                        <button class="realize__buttonsright"></button>
+                    </div>
+                    <div>
+                        <ul class="realize__slides" id="realize__slides">
+                            <li class="realize__slide">
+                                <img src="img/watch_mobile.png" width="340" height="242" alt="watch">
+                            </li>
+                            <li class="realize__slide">
+                                <img src="img/sofa.png" width="340" height="242" alt="sofa">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="question__formwrap">
+                    <h2 class="question__maintext">have any questions?</h2>
+                    <form class="question__form" method="post">
+                        <label for="name" class="question__formlabel">Name: </label>
+                        <input class="question__formlinput" type="text" name="name" id="name" required placeholder="What is your name:">
+                        <label for="tel" class="question__formlabel">Phone </label>
+                        <input class="question__formlinputtel" type="tel" name="tel" id="tel" required placeholder="Your phone number:">
+                        <label for="question" class="question__formlabel">Question </label>
+                        <input class="question__formlinputquestion" type="text" name="question" id="question" required placeholder="I want to know:">
+                        <input type="checkbox" class="questioncustom-checkbox" id="pdquestion" name="pdquestion" value="yes">
+                        <label for="pdquestion" class="question__formlabelpd">I agree to the processing of personal data</label>
+                        <button type="submit" class="question__formbutton">SUMBIT</button>
+                    </form>
                 </div>
             </div>
         </div>
