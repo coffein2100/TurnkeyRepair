@@ -20,16 +20,28 @@ body {
     margin: 0;
     padding: 0;
     height: 5311px;
+    @media (min-width: @desktop-width){
+        height: 7499px;
+    }
 }
 @imagePath: ~"../img/";
 
+.containernav {
+    width: 340px;
+    margin: 0 auto;
+    @media (min-width: @desktop-width){
+        width: 1256px;
+    }
+}
 .container {
     width: 340px;
     margin: 0 auto;
+    @media (min-width: @desktop-width){
+        width: 1171px;
+    }
 }
  
-@desktop-width: 1200px;
-@longdesktop-width: 1400px;
+@desktop-width: 1440px;
 
 @import "Block/header.less";
 @import "Block/preview.less";
