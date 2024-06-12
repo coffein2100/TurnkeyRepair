@@ -3,6 +3,8 @@ var prevButton = document.querySelector('.completed__buttonsleft');
 var nextButton = document.querySelector('.completed__buttonsright');
 var slideCount = slides.length;
 let slideIndex = 0;
+var indicator = document.querySelectorAll('.completed__slidenow');
+var textnavigate = document.querySelectorAll('.completedproject__navli');
 
 // Устанавливаем обработчики событий для кнопок
 prevButton.addEventListener('click', showPreviousSlide);
@@ -10,13 +12,21 @@ nextButton.addEventListener('click', showNextSlide);
 
 // Функция для показа предыдущего слайда
 function showPreviousSlide() {
+    indicator[slideIndex].className = 'completed__slidenow';
+    textnavigate[slideIndex].className = 'completedproject__navli';
     slideIndex = (slideIndex - 1 + slideCount) % slideCount;
+    indicator[slideIndex].className='completed__slidenow completed__slidenowactive';
+    textnavigate[slideIndex].className = 'completedproject__navli completedproject__navliactive';
     updateSlider();
 }
 
   // Функция для показа следующего слайда
 function showNextSlide() {
+    indicator[slideIndex].className = 'completed__slidenow';
+    textnavigate[slideIndex].className = 'completedproject__navli';
     slideIndex = (slideIndex + 1) % slideCount;
+    indicator[slideIndex].className='completed__slidenow completed__slidenowactive';
+    textnavigate[slideIndex].className = 'completedproject__navli completedproject__navliactive';
     updateSlider();
 }
 
@@ -27,8 +37,33 @@ function updateSlider() {
         slide.style.display = 'block';
       } else {
         slide.style.display = 'none';
+/*         indicator[slideIndex].className = 'completed__slidenow'; */
       }
     });
+}
+function showAdmiral() {
+  indicator[slideIndex].className = 'completed__slidenow';
+  textnavigate[slideIndex].className = 'completedproject__navli';
+  slideIndex = 0;
+  indicator[slideIndex].className='completed__slidenow completed__slidenowactive';
+  textnavigate[slideIndex].className = 'completedproject__navli completedproject__navliactive';
+  updateSlider();
+}
+function showSochi() {
+  indicator[slideIndex].className = 'completed__slidenow';
+  textnavigate[slideIndex].className = 'completedproject__navli';
+  slideIndex = 1;
+  indicator[slideIndex].className='completed__slidenow completed__slidenowactive';
+  textnavigate[slideIndex].className = 'completedproject__navli completedproject__navliactive';
+  updateSlider();
+}
+function showPatriotic() {
+  indicator[slideIndex].className = 'completed__slidenow';
+  textnavigate[slideIndex].className = 'completedproject__navli';
+  slideIndex = 2;
+  indicator[slideIndex].className='completed__slidenow completed__slidenowactive';
+  textnavigate[slideIndex].className = 'completedproject__navli completedproject__navliactive';
+  updateSlider();
 }
 updateSlider();
 

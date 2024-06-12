@@ -56,6 +56,13 @@
     <section class="completedproject">
         <div class="container">
             <div class="completedprojectwrap">
+                <div class="completedproject__nav">
+                    <ul class="completedproject__navlist">
+                        <li class="completedproject__navli completedproject__navliactive" onclick="showAdmiral()">Rostov-on-Don, Admiral</li>
+                        <li class="completedproject__navli" onclick="showSochi()">Sochi Thieves</li>
+                        <li class="completedproject__navli" onclick="showPatriotic()">Rostov-on-Don Patriotic</li>
+                    </ul>
+                </div>
                 <div class="completedproject__topwrap">
                     <h2 class="completedproject__headtext">Completed <br>projects</h2>
                     <p class="completedproject__text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
@@ -63,6 +70,9 @@
                 <div class="completedproject__caruselblock">
                     <div class="completed__buttons">
                         <button class="completed__buttonsleft" aria-label="left"></button>
+                        <span class="completed__slidenow completed__slidenowactive"></span>
+                        <span class="completed__slidenow"></span>
+                        <span class="completed__slidenow"></span>
                         <button class="completed__buttonsright" aria-label="right"></button>
                     </div>
                     <ul class="completedproject__slides" id="completedproject__slides">
@@ -116,6 +126,31 @@
                                 </ul>
                             </div>
                         </li>
+                        <li class="completedproject__slide">
+                            <div class="completedproject__slideimg">
+                                <img class="completedproject__img" src="img/completed_rostov.png" width="340" height="241" alt="пример работы1">
+                            </div>
+                            <div class="completedproject__slideinfowrap">
+                                <ul class="completedproject__slideinfo">
+                                    <li>
+                                        <p class="completedproject__slidemaintext">City:</p>
+                                        <p class="completedproject__slidetext">Rostov-on-Don patriotic</p>
+                                    </li>
+                                    <li>
+                                        <p class="completedproject__slidemaintext">apartment area:</p>
+                                        <p class="completedproject__slidetext">181 m<sup>2</sup></p>
+                                    </li>
+                                    <li>
+                                        <p class="completedproject__slidemaintext">Repair time:</p>
+                                        <p class="completedproject__slidetext">7.5 months</p>
+                                    </li>
+                                    <li>
+                                        <p class="completedproject__slidemaintext">Repair Cost:</p>
+                                        <p class="completedproject__slidetext">Upon request</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -123,7 +158,7 @@
     </section>
     <section class="onlinecontrol">
         <div class="container">
-            <div class="onlinecontrolmobile">
+            <div class="onlinecontrolwrap">
                 <h2 class="onlinecontrol__headtext">online control</h2>
                 <div class="onlinecontrol__img">
                     <img  src="img/camera.svg" width="34" height="29" alt="камера">
@@ -131,14 +166,20 @@
                 <video class="onlinecontrol__video" controls width="340" height="207">
                     <track [kind="captions"]> онлайн просмотр 
                 </video>
-                <p class="onlinecontrol__about">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. Y ou can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.</p>
+                <p class="onlinecontrol__about">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.</p>
                 <form class="onlinecontrol__form" method="post">
-                    <label for="name" class="onlinecontrol__formlabel">Name: </label>
-                    <input class="onlinecontrol__formlinput" type="text" name="name" id="name" required placeholder="What is your name:">
-                    <label for="tel" class="onlinecontrol__formlabel">Number </label>
-                    <input class="onlinecontrol__formlinputtel" type="tel" name="tel" id="tel" required placeholder="Your phone number:">
-                    <input type="checkbox" class="custom-checkbox" id="pd" name="pd" value="yes">
-                    <label for="pd" class="onlinecontrol__formlabelpd">I agree to the processing of personal data</label>
+                    <div class="onlinecontrol__formwrap">
+                        <label for="name" class="onlinecontrol__formlabel">Name: </label>
+                        <input class="onlinecontrol__formlinput" type="text" name="name" id="name" required placeholder="What is your name:">
+                    </div>
+                    <div class="onlinecontrol__formwrap">
+                        <label for="tel" class="onlinecontrol__formlabel">Phone </label>
+                        <input class="onlinecontrol__formlinputtel" type="tel" name="tel" id="tel" required placeholder="Your phone number:">
+                    </div>
+                    <div class="onlinecontrol__formwrappd">
+                        <input type="checkbox" class="custom-checkbox" id="pd" name="pd" value="yes">
+                        <label for="pd" class="onlinecontrol__formlabelpd">I agree to the processing of personal data</label>
+                    </div>
                     <button type="submit" class="onlinecontrol__formbutton">SUMBIT</button>
                 </form>
             </div>

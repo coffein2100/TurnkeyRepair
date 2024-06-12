@@ -1,6 +1,9 @@
 .completedproject {
     background-color: @backcolor;
     padding-bottom: 58px;
+    @media (min-width: @desktop-width){
+        min-height: 1020px;
+    }
 }
 .completedproject__topwrap {
     padding-top: 32px;
@@ -213,7 +216,59 @@
     @media (min-width: @desktop-width){
        padding-top:107px; 
        display: grid;
-       grid-template-columns: 1fr 1fr;
+       grid-template-columns: 492px 679px;
        grid-template-rows: 70px 159px 500px;
     }
+}
+.completed__slidenow {
+    display: none;
+    @media (min-width: @desktop-width){
+        display: block;
+        border-radius: 30px;
+        width: 9px;
+        height: 9px; 
+        background: rgba(255, 255, 255, 0.3);       
+    }
+}
+.completed__slidenowactive{
+    @media (min-width: @desktop-width){
+        background: @textmain;
+    }
+}
+.completedproject__nav {
+    display: none;
+    @media (min-width: @desktop-width){
+        display: block;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+}
+.completedproject__navlist{
+    display: none;
+    @media (min-width: @desktop-width){
+        display: flex;
+        width: 623px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }    
+}
+.completedproject__navli {
+    font-family: 'Yeseva One', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 139%;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);    
+}
+.completedproject__navli:hover{
+    cursor: pointer;
+    color: @textbright;
+    text-decoration: underline;
+}
+.completedproject__navliactive {
+    color: @textbright;
+    text-decoration: underline;
 }
