@@ -82,7 +82,7 @@
         font-size: 18px;
         line-height: 205%;
         color:  #363636;
-        margin-bottom: 91px;
+        margin-bottom: 85px;
     }
 }
 .onlinecontrol__about::before {
@@ -106,8 +106,10 @@
     flex-direction: column;
     @media (min-width: @desktop-width){
         display: grid;
-        grid-template-columns:231px 231px 200px;
+        grid-template-columns:1fr 1fr 1fr;
         column-gap: 49px;
+        row-gap: 25px;
+        justify-items: center;
     }
 }
 .onlinecontrol__formlabel {
@@ -244,7 +246,13 @@
     flex-wrap: wrap;
 }
 .onlinecontrol__formwrappd {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;  
+    @media (min-width: @desktop-width){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;  
+        grid-column-start: 1;
+        grid-column-end: -1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
 }
