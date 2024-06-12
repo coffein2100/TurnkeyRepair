@@ -2,6 +2,10 @@
     background-color: @textmain;
     padding-top: 80px;
     margin-bottom: 210px;
+    @media (min-width: @desktop-width){
+        padding-top: 75px;
+        padding-bottom: 150px;
+    }
 }
 .typesofrepair__wraptop {
     display: flex;
@@ -19,12 +23,18 @@
     text-align: center;
     color: #181818;    
     margin-bottom: 15px;
+    @media (min-width: @desktop-width){
+        font-size: 20px;
+    }
 }
 .typesofrepair__img {
     position: relative;
     width: 38px;
     height: 28px;
     margin-bottom: 40px;
+    @media (min-width: @desktop-width){
+        margin-bottom: 30px;
+    }
 }
 .typesofrepair__img::before {
     position: absolute;
@@ -46,13 +56,29 @@
     right: -40px;
     background: @textbright;
 }
+.typesofrepairli__img{
+    @media (min-width: @desktop-width){
+        width: 392px;
+        height: 421px;  
+    }  
+}
 .typesofrepair__type {
     display: flex;
     flex-direction: column;
+    @media (min-width: @desktop-width){
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        column-gap: 30px;
+    }
 }
 .typesofrepair__typeli {
     position: relative;
     margin-bottom: 173px;
+    @media (min-width: @desktop-width){
+        width: 392px;
+        height: 420px;
+    }
 }
 .typesofrepairli__about {
     position: absolute;
@@ -64,6 +90,12 @@
     display: flex;
     flex-direction: column;
     box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.05);
+    @media (min-width: @desktop-width){
+        width: 330px;
+        height: 286px;
+        left: 31px;
+        bottom:-159px;
+    }
 }
 .typesofrepairli__abouttext{
     padding-left: 36px;
@@ -74,16 +106,28 @@
     font-size: 15px;
     line-height: 139%;
     color: #363636;    
+    @media (min-width: @desktop-width){
+        padding-top: 25px;
+        font-size: 18px;
+    }
 }
 .typesofrepairli__redecoratinglist {
     list-style-type: disc;
     padding-left: 50px;
+    height: 160px;
+    overflow-y: auto;
+    @media (min-width: @desktop-width){
+        height: 188px;
+    }
 }
 .typesofrepairli__redecoratingtext {
     font-weight: 400;
     font-size: 13px;
     line-height: 170%;
     color: #959595;    
+    @media (min-width: @desktop-width){
+        line-height: 205%;
+    }
 }
 .typesofrepairli__aboutlink {
     display: flex;
@@ -103,6 +147,14 @@
     color: @textmain;  
     box-shadow: 5px 5px 10px 0 rgba(227, 184, 115, 0.3);
     background-color: @textbright;  
+    @media (min-width: @desktop-width){
+        position: absolute;
+        width: 228px;
+        height: 54px;   
+        font-size: 18px;
+        left: 0;
+        top:260px;
+    }
 }
 .typesofrepairli__aboutlink:hover {
     cursor: pointer;
