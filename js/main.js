@@ -101,3 +101,53 @@ function updateSliderBottom() {
     });
 }
 updateSliderBottom();
+
+//слайдер для секции Realize
+
+let navLinksdesktop = document.querySelectorAll("#realize__typelist .realize__typeli");
+let slidesdesktop = document.querySelectorAll("#realize__slidesdesk .realize__slidesdeskli");
+let maxZIndexdesktop = navLinksdesktop.length;
+slidesdesktop[0].classList.add("slidesdeskliactive");
+navLinksdesktop[0].classList.add("realize__typeliactive");
+
+navLinksdesktop.forEach((navLink, activeIndex) => {
+
+  navLink.addEventListener("click", (event) => {
+    // nav-link
+    // console.log(activeIndex);
+    navLinksdesktop.forEach(navLink => navLink.classList.remove("realize__typeliactive"));
+    navLink.classList.add("realize__typeliactive");
+    // slide
+    let currentSlide = document.querySelector(".slidesdeskliactive");
+     let slideFadeOut = currentSlide.animate(
+      [
+        { transform: "translateX(0)", opacity: 1 },
+        { transform: "translateX(5%)", opacity: 0 }
+      ],
+      {
+        duration: 600,
+        easing: "ease-in",
+        fill: "forwards"
+      }
+    );
+    slideFadeOut.onfinish = () => {
+      slidesdesktop.forEach(slide => slide.classList.remove("slidesdeskliactive"));
+      let activeSlide = slidesdesktop[activeIndex];
+      activeSlide.classList.add("slidesdeskliactive");
+      activeSlide.animate(
+        [
+          {
+            transform: "translateX(5%)",
+            opacity: 0
+          },
+          {
+            transform: "translateX(0)",
+            opacity: 1
+          }
+        ],
+        { duration: 600, easing: "ease-out", fill: "forwards" }
+      );
+    };
+    // overlay
+  });
+});

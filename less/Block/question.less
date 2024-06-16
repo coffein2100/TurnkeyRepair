@@ -2,6 +2,10 @@
     position: relative;
     background-color: @backcolor;
     display: flex;
+    top:-340px;
+    @media (min-width: @desktop-width){
+        top:-0;  
+    }
 }
 .questionmobile {
     display: flex;
@@ -14,53 +18,14 @@
     line-height: 139%;
     text-transform: uppercase;
     text-align: center;
-    color: @textmain;   
+    color: @textmain;  
+    padding-top: 170px; 
     margin-bottom: 52px;
 }
 .question__formwrap {
     position: relative;
-    top:-165px;
 }
-.realize__buttons {
-    position: absolute;
-    top:57%;
-    left:13px;
-    width: 312px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.realize__buttonsleft {
-    width: 36px;
-    height: 36px;
-    border: none;
-    border-radius: 50%;
-    background-color: @textbright;
-    background-image: url('@{imagePath}left_button.png');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    z-index: 2;
-}
-.realize__buttonsright{
-    width: 36px;
-    height: 36px;
-    border: none;
-    border-radius: 50%;
-    background-color: @textbright;
-    background-image: url('@{imagePath}right_button.png');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    z-index: 2;
-}
-.realize__buttonsleft:hover{
-    cursor: pointer;
-    background-color:#E4981E;
-}
-.realize__buttonsright:hover{
-    cursor: pointer;
-    background-color:#E4981E;
-}
+
 .question__form {
     display: flex;
     flex-direction: column;

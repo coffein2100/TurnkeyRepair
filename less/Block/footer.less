@@ -1,9 +1,13 @@
 .footer {
     position: relative;
-    top:-120px;
+    padding-top: 50px;
+    top:-340px;
     background-color: @backcolor;
     display: grid;
     grid-auto-flow: column;
+    @media (min-width: @desktop-width){
+        top:0;  
+    }
 }
 .footer__map {
     width: 340px;
