@@ -4,10 +4,14 @@
     display: flex;
     top:-340px;
     @media (min-width: @desktop-width){
-        top:-0;  
+        margin: 0 auto;
+        width: 883px;
+        height: 445px;
+        top:-240px;  
+        z-index: 100;
     }
 }
-.questionmobile {
+.questionmainwrap {
     display: flex;
     flex-direction: column;
 }
@@ -21,14 +25,56 @@
     color: @textmain;  
     padding-top: 170px; 
     margin-bottom: 52px;
+    @media (min-width: @desktop-width){
+        padding-top: 35px;
+        margin-bottom: 32px;
+    }
 }
 .question__formwrap {
     position: relative;
 }
-
+.question__formwrapname {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: @desktop-width){
+        display: flex;
+        flex-direction: column;
+        width: 231px;
+    }
+}
+.question__formwraptel {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: @desktop-width){
+        display: flex;
+        flex-direction: column;
+        width: 231px;
+    }
+}
+.question__formwrapquestion {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: @desktop-width){
+        width: 516px;
+    }
+}
+.question__formwrappd {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: @desktop-width){
+        width: 516px;
+        justify-content: center;
+        align-items: center;
+    }
+}
 .question__form {
     display: flex;
     flex-direction: column;
+    @media (min-width: @desktop-width){
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
 }
 .question__formlabel {
@@ -85,6 +131,11 @@
     line-height: 164%;
     color: @textmain;  
     margin-bottom: 65px;      
+    @media (min-width: @desktop-width){
+        padding-top: 25px; 
+        margin: 0 auto;
+        margin-bottom: 45px;
+    }
 }
 .questioncustom-checkbox {
     position: absolute;
@@ -115,8 +166,8 @@
   }
   .question__formbutton {
     display: flex;
-    min-width: 340px;
-    min-height: 51px;
+    width: 340px;
+    height: 51px;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
@@ -128,6 +179,10 @@
     text-transform: uppercase;
     color: @textmain;
     border: none;
+    @media (min-width: @desktop-width){
+        width: 200px;
+        height: 51px;
+    }
   }
   .question__formbutton:hover {
     fill: #E4981E;
